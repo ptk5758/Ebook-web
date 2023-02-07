@@ -198,6 +198,151 @@ const BookList = ({selectBook} : {selectBook : Function}) => {
         }        
       ]
     },
+    {
+      id : 2,
+      subject : "우리는 돌멩이",
+      thumbnailURL : "/source/2/thum.png",
+      story : [
+        {
+          source : "/source/2/slide1.png",
+          sound : "/source/2/sound/title.wav",
+        },
+        {
+          source : "/source/2/slide2.png",
+        },
+        {
+          source : "/source/2/slide3.png",
+        },
+        {
+          source : "/source/2/slide4.png",
+          sound : "/source/2/sound/slide4.wav",
+        },
+        {
+          source : "/source/2/slide5.png",
+          sound : "/source/2/sound/slide5.wav",
+        },
+        {
+          source : "/source/2/slide6.png",
+          sound : "/source/2/sound/slide6.wav",
+        },
+        {
+          source : "/source/2/slide7.png",
+          sound : "/source/2/sound/slide7.wav",
+        },
+        {
+          source : "/source/2/slide8.png",
+          sound : "/source/2/sound/slide8.wav",
+        },
+        {
+          source : "/source/2/slide9.png",
+          sound : "/source/2/sound/slide9.wav",
+        },
+        {
+          source : "/source/2/slide10.png",
+          sound : "/source/2/sound/slide10.wav",
+        },
+        {
+          source : "/source/2/slide11.png",
+          sound : "/source/2/sound/slide11.wav",
+        },
+        {
+          source : "/source/2/slide12.png",
+          sound : "/source/2/sound/slide12.wav",
+        },
+        {
+          source : "/source/2/slide13.png",
+          sound : "/source/2/sound/slide13.wav",
+        },
+        {
+          source : "/source/2/slide14.png",
+          sound : "/source/2/sound/slide14.wav",
+        },
+        {
+          source : "/source/2/slide15.png",
+          sound : "/source/2/sound/slide15.wav",
+        },
+        {
+          source : "/source/2/slide16.png",
+          sound : "/source/2/sound/slide16.wav",
+        },
+        {
+          source : "/source/2/slide17.png",
+          sound : "/source/2/sound/slide17.wav",
+        },
+        {
+          source : "/source/2/slide18.png",
+        },
+        {
+          source : "/source/2/slide19.png",
+          sound : "/source/2/sound/slide19.wav",
+        },
+        {
+          source : "/source/2/slide20.png",
+        },
+      ]
+    },
+    {
+      id : 3,
+      subject : "이게 나라고?",
+      thumbnailURL : "/source/3/thum.png",
+      story : [
+        {
+          source : "/source/3/slide1.png",
+        },
+        {
+          source : "/source/3/slide2.png",
+        },
+        {
+          source : "/source/3/slide3.png",
+        },
+        {
+          source : "/source/3/slide4.png",
+        },
+        {
+          source : "/source/3/slide5.png",
+        },
+        {
+          source : "/source/3/slide6.png",
+        },
+        {
+          source : "/source/3/slide7.png",
+        },
+        {
+          source : "/source/3/slide8.png",
+        },
+        {
+          source : "/source/3/slide9.png",
+        },
+        {
+          source : "/source/3/slide10.png",
+        },
+        {
+          source : "/source/3/slide11.png",
+        },
+        {
+          source : "/source/3/slide12.png",
+        },
+        {
+          source : "/source/3/slide13.png",
+        },
+        {
+          source : "/source/3/slide14.png",
+        },
+        {
+          source : "/source/3/slide15.png",
+        },
+        {
+          source : "/source/3/slide16.png",
+        },
+        {
+          source : "/source/3/slide17.png",
+        },
+        {
+          source : "/source/3/slide18.png",
+        },
+        
+      ]
+    },
     
   ]
   return(

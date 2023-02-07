@@ -20,8 +20,8 @@ html, body, #root, .content {
 header {
     /* font-size: 3.8rem; */
     background-color: #0d6efd;
-    padding: 0rem 0.9rem;
-    height: 6%;
+    padding: 0.4rem 0.9rem;
+    /* height: 6%; */
     display: flex;
     align-items: center;
 }
