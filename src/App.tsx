@@ -37,11 +37,6 @@ const SelectBook = () => {
   }
   const data : IBook[] = [
     {
-      id : 0,
-      subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
-    },
-    {
       id : 1,
       subject : "우리는 돌멩이",
       thumbnailURL : "/source/1/thum.png"
@@ -63,6 +58,11 @@ const SelectBook = () => {
     },
     {
       id : 5,
+      subject : "우리는 돌멩이",
+      thumbnailURL : "/source/1/thum.png"
+    },
+    {
+      id : 6,
       subject : "우리는 돌멩이",
       thumbnailURL : "/source/1/thum.png"
     },

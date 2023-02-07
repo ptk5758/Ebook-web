@@ -2,7 +2,7 @@ header, p {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    /* font-size: 100%; */
     font: inherit;
     vertical-align: baseline;
 }
@@ -10,12 +10,12 @@ header, p {
 .content {        
     font-weight: bold;
     color: #c0c0c0;
-    font-size: 2.5rem;
+    font-size: 26px;
 }
 header {
-    font-size: 3.8rem;
+    /* font-size: 3.8rem; */
     background-color: #0d6efd;
-    padding: 1.5rem;
+    padding: 1.0rem 0.9rem;
 }
 main {    
     display: flex;
@@ -29,4 +29,17 @@ main .book-list {
 }
 main .book-item {
     background-color: aquamarine;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px 12px;
+    padding: 8px 10px;
+}
+main .book-item img {
+    width: 80%;    
+}
+main .book-item p {
+    margin-top: 12px;
+    font-size: 24px;
+    color: black;
 }
