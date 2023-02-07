@@ -6,21 +6,36 @@ header, p {
     font: inherit;
     vertical-align: baseline;
 }
+html, body, #root, .content {
+    height: 100%;
+}
 
 .content {        
     font-weight: bold;
     color: #c0c0c0;
     font-size: 26px;
+    display: flex;
+    flex-direction: column;
 }
 header {
     /* font-size: 3.8rem; */
     background-color: #0d6efd;
-    padding: 1.0rem 0.9rem;
+    padding: 0rem 0.9rem;
+    height: 6%;
+    display: flex;
+    align-items: center;
+}
+header span {
+    display: flex;
 }
 main {    
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: stretch;    
+}
+main.view-mode {
+    height: 80%;
+    justify-content: center;
 }
 main .book-list {
     display: flex;
@@ -28,7 +43,7 @@ main .book-list {
     align-items: center;
 }
 main .book-item {
-    background-color: aquamarine;    
+    /* background-color: aquamarine;     */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,3 +58,10 @@ main .book-item p {
     font-size: 24px;
     color: black;
 }
+main.view-mode .book {
+    background-color: aquamarine;    
+}
+main.view-mode .book img {
+    width: 100%;
+}
+

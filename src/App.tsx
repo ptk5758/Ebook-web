@@ -6,30 +6,52 @@ import './App.css';
 interface IBook {  
   id : number;
   subject : string;
-  thumbnailURL : string;
+  thumbnailURL : string;  
+  story : IPage[];
+}
+interface IPage {
+  source : string;
 }
 function App() {
   const [book, setBook] = useState<IBook|null>();
-  
+  const selectBook = (_book : IBook | null) => {
+    setBook(_book);
+  }  
   return (
     <div className='content'>
       <header>
-        <span><p>UC 동화</p></span>
+        <span><p onClick={()=>{selectBook(null)}}>UC 동화</p></span>
       </header>
-      <main>
+      <main className={book ? "view-mode" : ""}>
         {
-          book ? <div>책컴포넌트</div>
-          : <SelectBook/>
+          book ? <Book _book={book}/>
+          : <BookList selectBook={selectBook}/>
         }
       </main>
     </div>
   );
 }
-const SelectBook = () => {
+
+
+const Book = ({_book} : {_book : IBook}) => {
+  const [book, setBook] = useState<IBook>(_book);  
+  const [page, setPage] = useState<number>(0);
+  return(
+    <div className='book'>
+      <img src={book.story[page].source}/>
+    </div>
+  );
+}
+
+
+
+
+
+const BookList = ({selectBook} : {selectBook : Function}) => {
   const BookItem = ({book} : {book : IBook}) => {
     return(
       <div className='book-item' key={book.id}>
-        <img src={book.thumbnailURL}/>
+        <img onClick={()=>{selectBook(book)}} src={book.thumbnailURL}/>
         <p>{book.subject}</p>
       </div>
     )
@@ -39,33 +61,14 @@ const SelectBook = () => {
     {
       id : 1,
       subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
+      thumbnailURL : "/source/1/thum.png",
+      story : [
+        {
+          source : "/source/1/page(1).png"
+        }
+      ]
     },
-    {
-      id : 2,
-      subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
-    },
-    {
-      id : 3,
-      subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
-    },
-    {
-      id : 4,
-      subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
-    },
-    {
-      id : 5,
-      subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
-    },
-    {
-      id : 6,
-      subject : "우리는 돌멩이",
-      thumbnailURL : "/source/1/thum.png"
-    },
+    
   ]
   return(
     <div className='book-list'>
