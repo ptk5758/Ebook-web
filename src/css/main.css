@@ -24,6 +24,7 @@ header {
     /* height: 6%; */
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
 }
 header span {
     display: flex;
@@ -59,9 +60,9 @@ main .book-item p {
     color: black;
 }
 main.view-mode .book {
-    /* background-color: aquamarine;     */
+    display: flex;
+    justify-content: center;
 }
 main.view-mode .book img {
-    width: 100%;
+    width: 98%;
 }
-
