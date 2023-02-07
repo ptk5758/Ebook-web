@@ -59,7 +59,7 @@ main .book-item p {
     color: black;
 }
 main.view-mode .book {
-    background-color: aquamarine;    
+    /* background-color: aquamarine;     */
 }
 main.view-mode .book img {
     width: 100%;
